@@ -308,7 +308,7 @@ type (
 		UpdateInstanceID(ID string) error
 		Version() (*models.Version, error)
 		UpdateVersion(*models.Version) error
-		Migrate() (bool, error)
+		Migrate() error
 		BucketName() string
 	}
 
